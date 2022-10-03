@@ -1,0 +1,147 @@
+body {
+    background-color: whitesmoke;
+}
+* {
+    box-sizing: border-box;
+}
+
+.cont {
+    width              : 400px;
+    height             : 600px;
+    background-color   : whitesmoke;
+    position           : absolute;
+    top                : 50%;
+    left               : 50%;
+    transform          : translate(-50%, -50%);
+    border-radius      : 30px;
+    border:2px solid #333;
+}
+
+p {
+    width         : 85%;
+    text-align: center;
+    height        : fit-content;
+    background    : #026565;
+    color         : white;
+    font-family   : Cairo;
+    padding       : 10px;
+    margin        : 20px auto;
+    font-size     : x-large;
+    border-radius : 10px;
+    text-transform: capitalize;
+}
+
+form {
+    display       : flex;
+    flex-direction: column;
+    width         : 100%;
+    height        : 50%;
+    padding       : 0px 30px;
+    margin        : 0px 5px;
+}
+
+
+label {
+    font-size     : 25px;
+    text-align    : center;
+    font-family   : Cairo;
+    width         : 100%;
+    text-transform: capitalize;
+    color         : #026565;
+
+
+}
+
+input {
+    width     : 100%;
+    padding   : 10px;
+    /* margin : 10px; */
+    border    : 1px solid #333D79FF;
+    height    : 15%;
+}
+
+input[type="text"],
+input[type="password"] {
+    color    : #00203F;
+    font-size: large;
+}
+input:focus{
+    outline: 1px solid #603F83FF;
+}
+.login{
+    width: 100%;
+    height: 55px;
+    /* margin: 20px auto; */
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    color: white;
+    background-color    : #026565;
+    font-size: 20px;
+    border: 1px solid #00203F;
+    border-radius: 5px;
+    font-family: Cairo;
+    text-transform: capitalize;
+}
+.login:hover{
+    background-color: #07a5a5;
+}
+.forget{
+    text-transform: capitalize;
+    position: relative;
+    top: 60px;
+     /* color: #00203F; */
+}
+.forget a{
+    text-decoration: none;
+    color: #00203F;
+}
+.forget a:hover{
+    color: #026565;
+}
+.or{
+      text-transform: capitalize;
+  position      : relative;
+  top           : 70px;
+    color: black;
+}
+.sign{
+    width           : 100%;
+height          : 55px;
+/* margin       : 20px auto; */
+position        : relative;
+top             : 100px;
+cursor          : pointer;
+color           : white;
+    background-color    : #026565;
+font-size       : 20px;
+border          : 1px solid #00203F;
+border-radius   : 5px;
+font-family     : Cairo;
+text-transform  : capitalize;
+}
+.sign:hover{
+    background-color: #07a5a5;
+}
+
+body::before{
+    content: " ";
+    position: fixed;
+    width: 200%;
+    height: 100%;
+    background-color: #012d2d;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-60%) skew(0deg,-10deg);
+    border-radius: 50%;
+    z-index: -1;
+    animation: waving 3s ease-in-out infinite alternate;
+}
+@keyframes waving{
+    from{
+        transform:translateX(-60%) skew(0deg,-10deg);
+    }
+    to{
+        transform: translateX(-30%) skew(10deg,0deg);
+    }
+}
